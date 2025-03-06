@@ -1,9 +1,9 @@
-import companyLogo from '../assets/cocretainc.jpg'
+import logo from '../assets/cocretainc.jpg'
 
 function Header() {
   return (
     <header className="header">
-      <img src={companyLogo} alt="Cocreta INC Logo" className="logo" />
+      <img src={logo} alt="Cocreta INC Logo" className="logo" />
     </header>
   )
 }
