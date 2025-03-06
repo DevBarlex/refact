@@ -29,9 +29,21 @@ const employees = [
     { name: 'Nuria', lastName: 'Gil', hobbies: ['teatro', 'cocina'], age: 27 },
     { name: 'Rubén', lastName: 'Sanz', hobbies: ['fútbol', 'lectura'], age: 32 },
     { name: 'Cristina', lastName: 'Herrero', hobbies: ['bailar', 'pintura'], age: 26 }
-  ];
+]
 
-  
+function EmployeeList() {
+  return (
+    <div className="employee-list">
+      {employees.map((employee, i) => (
+        <div key={i} className="employee-card">
+          <p>Nombre: {employee.name}</p>
+          <p>Apellido: {employee.lastName}</p>
+          <p>Hobbies: {employee.hobbies.join(', ')}</p>
+          <p>Edad: {employee.age}</p>
+        </div>
+      ))}
+    </div>
+  )
+}
 
-
-export default employees;
+export default EmployeeList;

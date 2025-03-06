@@ -1,56 +1,77 @@
-#root {
+.app-container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.envoltura {
-  display: inline;
-}
-
-.envoltura > div {
-  display: inline-block;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 8px;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  max-width: 150px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.employee-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.employee-card {
+  background-color: #333333c3;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 40%;
 }
 
-.card {
-  padding: 2em;
+.calculator {
+  padding: 20px;
+  background: #deebad;
+  border-radius: 8px 8px 0 0;
 }
 
-.read-the-docs {
-  color: #888;
+.calculator input {
+  padding: 10px;
+  margin: 5px;
+  width: 100px;
 }
 
-
-.footer{
-  background-color: #000000;
-  text-decoration: none;
+.calculator button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
+
+.calculator button:hover {
+  background-color: #0056b3;
+}
+
+.calculator p {
+  color: black;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  border-radius: 0 0 8px 8px;
+}
+
